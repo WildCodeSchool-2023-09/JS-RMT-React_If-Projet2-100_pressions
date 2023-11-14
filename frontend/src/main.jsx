@@ -1,4 +1,5 @@
 import React from "react";
+import axios from "axios";
 import ReactDOM from "react-dom/client";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
@@ -14,6 +15,12 @@ const router = createBrowserRouter([
   {
     path: "/basket",
     element: <Basket />,
+    loader: () => {
+      return axios
+        .get(`${import.meta.env.VITE_BACKEND_URL}/api/basket?beers=1|5|25`)
+        .then((res) => res.data)
+        .catch((err) => console.error(err));
+    },
   },
 ]);
 

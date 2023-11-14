@@ -1,0 +1,30 @@
+/* Basket.css */
+
+.Panier {
+  width: auto;
+  margin: 2rem;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 5px black;
+}
+
+.basket {
+  width: auto;
+  margin: 2rem;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 5px black;
+}
+
+.beerOne {
+  background-color: #8a5416d8;
+  background-image: linear-gradient(to bottom, #fff2cc, #fff2cc);
+  background-size: 100% 20%;
+  background-repeat: no-repeat;
+}
+
+.footer {
+  width: auto;
+}
+
+.button {
+  width: auto;
+}
